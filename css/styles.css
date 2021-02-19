@@ -108,6 +108,14 @@ header{
   position: fixed;
 }
 
+@media only screen and (max-width: 600px) {
+  .introducao {
+    width: 100%;
+    padding: 0px;
+    margin-top: 30%;
+    position: fixed;
+  }
+}
 
 .mudaOpac{
   opacity: 50%;
@@ -204,9 +212,20 @@ header{
 }
 
 #habi {
+  display: flex;
   margin: 0 auto;
-  width: 75%;
+  width: 70%;
 }
+
+@media only screen and (max-width: 600px) {
+  #habi {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
 .habItem {
   align-items: center;
   padding: 20px;
@@ -258,6 +277,17 @@ header{
 	transition: all 0.3s;
 }
 
+@media only screen and (max-width: 600px) {
+  .tam {
+    max-width: 300px;
+    padding: 20px 0px 10px 0px;
+    align-items: center;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
 .tam:hover {
   -moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
@@ -276,8 +306,23 @@ header{
   border-radius: 5%;
 }
 
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 60%;
+    height: 50%;
+    position: center;
+    margin: auto;
+    background: #DDDDDD;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+  }
+}
+
 .projetos {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   padding: 40px 40px 20px 40px;
   position: center;
 }
@@ -320,7 +365,16 @@ header{
   width: 50%;
   display: flex;
   margin: auto;
-  padding: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .itens {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
 }
 
 /**
