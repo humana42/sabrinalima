@@ -1,0 +1,428 @@
+/**
+  * Geral
+  */
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #090907;
+    color: #4d4d4d;
+}
+h1 {
+  font-size: 9vh;
+  font-weight: 600;
+  margin: 0;
+}
+h2{
+  font-size: 30px;
+  font-weight: 500;
+  padding: 0px;
+  margin: 0px;
+}
+h3{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/**
+  * Navegação
+  */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+    flex-direction: row;
+}
+.mudaCor{
+  background-color:rgba(0, 0, 0, 0.9);
+}
+
+nav > a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 700px;
+    margin-left: 30px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    width: 30%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav ul li{
+    width: 100%;
+}
+
+ul :hover {
+  color: #0E2CD0;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+/**
+  * Cabeçalho
+  */
+header{
+    background-color: #0A0907;
+    background-image: url('../assets/plano-de-fundo.jpg');
+    background-position: center;
+    background-size: cover;
+    display: block;
+    color: #f1f1f1;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    height: 100vh;
+}
+.introducao {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15%;
+  margin-left: 10%;
+  position: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  .introducao {
+    width: 100%;
+    padding: 0px;
+    margin-top: 30%;
+    position: fixed;
+  }
+}
+
+.mudaOpac{
+  opacity: 50%;
+
+}
+.mudaIntro{
+  opacity: 20%;
+}
+
+.mudaIntro2{
+  opacity: 0;
+  display: none;
+}
+
+/**
+  * Sobre
+  */
+#sobre{
+    align-items: center;
+    padding: 100px 0px 0px 0px;
+    background-color: #000000;
+    color: #f1f1f1;
+    height: 100%;
+    justify-content: center;
+    min-height: 250px;
+}
+
+#sobre h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+
+#foto {
+  width: 100%;
+  height: auto;
+}
+
+#sobreTexto{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 100px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  #sobreTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 100px 0px 0px 0px;
+}
+}
+
+#texto {
+  padding: 60px;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+
+#Eventos {
+  width: 100%;
+  max-width: 100px;
+  padding: 30px 50px 100px;
+
+}
+
+#PEventos {
+  margin-top: 50px;
+  margin-left: 15%;
+}
+
+/**
+  * Habilidades
+  */
+#habilidades{
+    background-color: #090907;
+    width: 100%;
+    height: 100%; 
+    padding: 100px 0px 100px 0px;
+    align-items: center;
+
+}
+#habilidades h2 {
+  color: #f1f1f1;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+#habi {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  #habi {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+.habItem {
+  align-items: center;
+  padding: 20px;
+}
+
+/**
+  * Portfólio
+  */
+#portfolio{
+  background-color: #000;
+  width: 100%;
+  height: 100%; 
+  padding: 100px 0px 100px 0px;
+}
+
+#portfolio h2{
+  color: #f1f1f1;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.lbox {
+  pointer-events: none;
+  display: flex;
+  opacity: 0;
+  position: fixed;
+}
+
+.lbox:target {
+  display: flex;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  pointer-events: auto;
+  background: rgb(0,0,0,.8);
+
+}
+
+.tam {
+  max-width: 300px;
+  padding: 20px;
+  align-self: center;
+  -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  .tam {
+    max-width: 300px;
+    padding: 20px 0px 10px 0px;
+    align-items: center;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
+.tam:hover {
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.box {
+  width: 50%;
+  height: 75%;
+  position: center;
+  margin: auto;
+  background: #DDDDDD;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 60%;
+    height: 50%;
+    position: center;
+    margin: auto;
+    background: #DDDDDD;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+  }
+}
+
+.projetos {
+  max-width: 600px;
+  width: 100%;
+  padding: 40px 40px 20px 40px;
+  position: center;
+}
+
+.ver {
+  margin: auto;
+  width: 150px;
+  height: 45px;
+  background-color: #0E2CD0;
+  border-radius: 10px;
+  border: none;
+  color: #f1f1f1;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.ver:hover {
+  background-color: #0b219c;
+  color: #f1f1f1;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+#close {
+  color: #8f8d8d;
+  font-family: Arial;
+  text-decoration: none;
+  width: 20%;
+  height: 50px;
+  position: absolute;
+  left: 75%;
+  top: 8%;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#close:hover {
+  color: #DDDDDD;
+}
+
+.itens {
+  width: 50%;
+  display: flex;
+  margin: auto;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .itens {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+/**
+  * Contato
+  */
+#contato{
+  background-color: #090907;
+  width: 100%;
+  height: 100%; 
+  padding: 100px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#contato h2{
+  color: #f1f1f1;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+#contato a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.redes {
+  padding: 20px;
+}
+
+
+#contato h3 {
+  padding: 20px;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+
+/**
+  * footer
+  */
+footer{
+    text-align: center;
+    padding: 40px;
+    background-color: #000;
+    color: #f1f1f185;
+}
+
+/**
+  * Projetos
+  */
