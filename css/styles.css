@@ -289,6 +289,7 @@ a{
 	transition: all 0.3s;
 }
 .imgPortfolio{
+  border-radius: 20px;
   width: 320px;
   height: 180px;
   padding: 30px 10px 30px 10px;
